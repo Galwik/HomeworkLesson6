@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class MainTitleTest extends TestDriver {
 
     @DisplayName("Sii.pl")
-    @Tag("Regression")
+    @Tag("regresja")
     @Tag("Sii")
     @ParameterizedTest
     @ValueSource(strings = "Logowanie na koncie")
@@ -19,7 +19,7 @@ public class MainTitleTest extends TestDriver {
     }
 
     @DisplayName("Onet.pl")
-    @Tag("Regression")
+    @Tag("regresja")
     @Tag("Onet")
     @ParameterizedTest
     @ValueSource(strings = "Onet – Jesteś na bieżąco")
@@ -29,7 +29,7 @@ public class MainTitleTest extends TestDriver {
     }
 
     @DisplayName("Kotuszkowo.pl")
-    @Tag("Regression")
+    @Tag("regresja")
     @Tag("Kotuszkowo")
     @ParameterizedTest
     @ValueSource(strings = "Kotuszkowo- blog o kotach")
@@ -39,7 +39,7 @@ public class MainTitleTest extends TestDriver {
     }
 
     @DisplayName("Filmweb.pl")
-    @Tag("Regression")
+    @Tag("regresja")
     @Tag("Filmweb")
     @ParameterizedTest
     @ValueSource(strings = "Filmweb - filmy takie jak Ty!")
@@ -49,7 +49,7 @@ public class MainTitleTest extends TestDriver {
     }
 
     @DisplayName("Selenium.dev")
-    @Tag("Regression")
+    @Tag("regresja")
     @Tag("Selenium")
     @ParameterizedTest
     @ValueSource(strings = "WebDriver | Selenium")
