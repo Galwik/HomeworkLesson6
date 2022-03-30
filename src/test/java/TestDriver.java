@@ -4,17 +4,18 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class TestDriver {
-    private static WebDriver driver;
+    private static Logger logger = LoggerFactory.getLogger("TestDriver.class");
+    public static WebDriver driver;
 
-    public static WebDriver getDriver() {
-        return driver;
-    }
 
     @BeforeAll
     static void beforeAll() {
         WebDriverManager.chromedriver().setup();
+        logger.info(">>>DRIVER INITIATED PROPERLY");
     }
 
     @BeforeEach
@@ -25,5 +26,6 @@ public class TestDriver {
     @AfterEach
     void afterEach() {
         driver.quit();
+        logger.info(">>>DRIVER CLOSED PROPERLY");
     }
 }
